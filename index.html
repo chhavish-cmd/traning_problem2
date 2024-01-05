@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Builder</title>
+</head>
+<body>
+    <div id="form-builder">
+        <h1>Form Builder</h1>
+        <div class="form-element">
+            <label for="elementName">Element Name:</label>
+            <input type="text" id="elementName" placeholder="Enter Element Name">
+        </div>
+        <div class="form-element">
+            <label for="elementType">Element Type:</label>
+            <select id="elementType">
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="password">Password</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <label>Required:</label>
+            <input type="radio" name="required" value="yes" checked> Yes
+            <input type="radio" name="required" value="no"> No
+        </div>
+        <button id="add-element">Add Element</button>
+        
+        <button id="generate-form">Generate Form</button>
+        <div id="form-elements">
+            <!-- Form elements will be appended here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
